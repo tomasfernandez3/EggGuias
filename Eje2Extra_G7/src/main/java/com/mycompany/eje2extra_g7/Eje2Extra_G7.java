@@ -10,6 +10,8 @@ package com.mycompany.eje2extra_g7;
 public class Eje2Extra_G7 {
 
     public static void main(String[] args) {
-        
+        Punto punto=new Punto();
+        punto.creapuntos();
+        System.out.println("La distancia es: "+ punto.calcularDistancia());
     }
 }

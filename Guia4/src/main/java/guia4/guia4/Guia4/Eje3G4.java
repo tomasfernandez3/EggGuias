@@ -6,7 +6,7 @@ Un número primo es aquel que solo puede dividirse entre 1 y sí mismo. Por ejem
 primo, ya que 25 es divisible entre 5, sin embargo, 17 si es primo
 
 */
-package Guia4;
+package guia4.guia4.Guia4;
 
 import java.util.Scanner;
 

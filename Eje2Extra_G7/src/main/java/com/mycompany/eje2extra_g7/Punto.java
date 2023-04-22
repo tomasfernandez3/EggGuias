@@ -11,32 +11,34 @@ import java.util.Scanner;
 
 public class Punto {
     Scanner sc=new Scanner(System.in);
-    public int x;
-    public int y;
-
-    public int getX() {
-        return x;
-    }
-
-    public int getY() {
-        return y;
-    }
-
-    public void setX(int x) {
-        this.x = x;
-    }
-
-    public void setY(int y) {
-        this.y = y;
-    }
+    private int x1;
+    private int y1;
+    private int x2;
+    private int y2;
     
-    public int crearPuntos(int x, int y){
-        System.out.println("Indique el Punto X: ");
-       x = sc.nextInt();
-        System.out.println("Indiquie el punto Y: ");
-       y= sc.nextInt();
-        int x1;
-       return x1 = x;
+    public Punto() {
+    } 
+    public void creapuntos(){
+        System.out.println("Indique el Punto X1: ");
+        x1 = sc.nextInt();
+        System.out.println("Indiquie el punto Y1: ");
+        y1 = sc.nextInt();
+        System.out.println("Indique el Punto X2: ");
+        x2 = sc.nextInt();
+        System.out.println("Indiquie el punto Y2: ");
+        y2 = sc.nextInt();
     }
-    
+    public int calcularDistancia() {
+        
+        int distancia = (int) Math.sqrt(Math.pow(x1, y2)+ Math.pow(x2, y2));
+        
+        return distancia;
+        
+    }
 }
+/*
+public double calcularDistancia() {
+        double distancia = Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+        return distancia;
+    }
+*/
